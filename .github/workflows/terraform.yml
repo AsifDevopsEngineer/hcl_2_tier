@@ -6,7 +6,7 @@ on:
     branches: ["main"]
   pull_request:
     branches: ["main"]
-  workflow  workflow_dispatch:
+  workflow_dispatch:
 
 env:
   AWS_REGION: ap-south-1
