@@ -10,6 +10,7 @@ terraform {
     encrypt        = true                           # Enable server-side encryption
   }
 
+
   required_providers {
     aws = {
       source  = "hashicorp/aws"
