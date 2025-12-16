@@ -62,3 +62,40 @@ variable "tags" {
     ManagedBy   = "Terraform"
   }
 }
+
+
+variable "alb_name" {
+  description = "Name for the Application Load Balancer."
+  type        = string
+  default     = "web-alb"
+}
+
+variable "alb_enable_https" {
+  description = "Whether to enable HTTPS listener."
+  type        = bool
+  default     = false
+}
+
+variable "alb_certificate_arn" {
+  description = "ACM certificate ARN for HTTPS listener (required if alb_enable_https = true)."
+  type        = string
+  default     = ""
+}
+
+variable "web_target_port" {
+  description = "Port on the web servers to receive traffic."
+  type        = number
+  default     = 80
+}
+
+variable "health_check_path" {
+  description = "Health check path for the target group."
+  type        = string
+  default     = "/"
+}
+
+variable "allowed_ingress_cidrs" {
+  description = "CIDR ranges allowed to reach the ALB (e.g., Internet)."
+  type        = list(string)
+  default     = ["0.0.0.0/0"]
+}
