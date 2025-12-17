@@ -23,7 +23,10 @@ variable "db_username" {
 }
 
 variable "db_password" {
-  sensitive = true
+  description = "RDS MySQL password"
+  type        = string
+  sensitive   = true
+  default     = "StrongPassword123!"
 }
 
 variable "db_name" {
