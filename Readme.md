@@ -13,6 +13,10 @@ Ensure high availability by using multiple Availability Zones.
 
 Design a VPC with a CIDR block (e.g., 10.0.0.0/16).
 Enable DNS support and hostnames.
+<img width="960" height="540" alt="image (1)" src="https://github.com/user-attachments/assets/ea4b7323-3ecb-4747-b323-18b26ebfead7" />
+<img width="960" height="540" alt="image" src="https://github.com/user-attachments/assets/c4c603d4-7401-407d-b3dd-79166e594faa" />
+
+
 
 
 3. Create Subnets
